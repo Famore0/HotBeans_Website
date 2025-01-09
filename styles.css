@@ -1,0 +1,73 @@
+/* Custom Colors */
+.w3-custom-blue {
+    background-color: #003366 !important; /* Professional dark blue */
+    color: white !important;
+}
+
+.w3-custom-teal {
+    background-color: #008080 !important; /* Teal */
+    color: white !important;
+}
+
+.w3-custom-gray {
+    background-color: #F4F4F4 !important; /* Light gray */
+    color: #333333 !important;
+}
+
+.w3-custom-hover:hover {
+    background-color: #005050 !important; /* Darker teal for hover */
+}
+
+/* Custom Professional Color */
+.w3-custom-header {
+    background-color: #003366 !important; /* Dark Blue */
+    color: white !important; /* Text Color */
+}
+
+#heading-container {
+  text-align: center;
+  margin-top: 50px; /* Adjust to create space */
+}
+
+#hotbeans-heading {
+  font-size: 2.5rem; /* Adjust size as needed */
+  font-weight: bold;
+  color: #333; /* Match your theme */
+  margin: 0;
+}
+
+/* Add padding around images to avoid overlap with text */
+.job-spec-image,
+.employee-image {
+    padding: 10px; /* Adjust as needed */
+    margin: 10px; /* Adds consistent spacing */
+    border-radius: 50%; /* Maintain the circular look */
+}
+
+/* For mobile responsiveness, ensure padding is preserved */
+@media (max-width: 768px) {
+    .job-spec-image,
+    .employee-image {
+        padding: 8px;
+        margin: 8px;
+    }
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Hidden by default */
+  z-index: 99;
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.back-to-top:hover {
+  background-color: #555; /* Darker on hover */
+}

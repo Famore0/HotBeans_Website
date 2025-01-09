@@ -1,75 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
+    <title>Job Spec</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Lato", sans-serif;
+        }
+        .w3-bar, h1, button {
+            font-family: "Montserrat", sans-serif;
+        }
+        .job-spec-image {
+            width: 200px; /* Larger size */
+            height: auto;
+            border-radius: 20px; /* Subtle rounding for a professional look */
+            margin: 10px auto; /* Slightly reduced margin */
+        }
+        .job-section {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            align-items: center; /* Center align content vertically */
+        }
+        .job-section .w3-third {
+            flex: 1 1 30%; /* Adjusts to a 30% width */
+            text-align: center;
+        }
+        .job-section .w3-twothird {
+            flex: 1 1 70%; /* Adjusts to a 70% width */
+            padding-left: 20px; /* Adds spacing between text and image */
+        }
+        .job-title {
+            font-size: 24px;
+            color: #333;
+        }
+        .job-description {
+            font-size: 16px;
+            color: #666;
+        }
+        .how-to-apply {
+            margin-top: 50px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
 
 <!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-orange w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-orange w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-orange"><img src="hb2.jpg" alt="home page" width=60px height=50px></a>
-    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue">About us</a>
-    <a href="application.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Application</a>
-    <a href="employee.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Employee</a>
-    <a href="JobSpec.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Job spec</a>
-     <a href="pay.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">HotBeans Course</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-neon yellow w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="about.html" class="w3-bar-item w3-button w3-padding-large">About us</a>
-    <a href="application.html" class="w3-bar-item w3-button w3-padding-large">Application</a>
-    <a href="employee.html" class="w3-bar-item w3-button w3-padding-large">Employee</a>
-    <a href="JobSpec.html" class="w3-bar-item w3-button w3-padding-large">Job spec</a>
-  </div>
+<div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large"><img src="hb2.jpg" alt="Home" width="60" height="50"></a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">About Us</a>
+    <a href="application.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Application</a>
+    <a href="employee.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Employee</a>
+    <a href="JobSpec.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Job Spec</a>
 </div>
 
-<!-- Contact Container -->
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-   <table>
-  <tr>
-    <h2>Application</h2></h2>
-    <th>Jobs</th>
-    <th>specification</th>
-    
-   <table class="center" border="1" >
+<!-- Header -->
+<header class="w3-container w3-custom-header w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">Job Specifications</h1>
+    <p class="w3-xlarge">Explore Your Career Opportunities with HotBeans Inc.</p>
+</header>
 
-  <tr>
-    <th>Web Developing</th>
-    <th>Web Designing</th>
-    <th>Assistant web</th>
-  </tr>
-  <tr>
-    <td><p><a href="https://UsableVictoriousCookie.cdoldur17.repl.co">click here!</a></p></td>
-    <td><p><a href="https://UsableVictoriousCookie.cdoldur17.repl.co">click here!</a></p></td>
-    <td><p><a href="https://enormouswealthyangle.cdoldur17.repl.co/">click here!</a></p></td>
-    <td><p><a 
-   
- 
-  </tr>
-     
-  <tr>
-   
-  </tr>
-</table>
-      <h3>Address</h3>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  E8 2QU London, UK</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +073467628013</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  hotbeanscs@gmail.com</p>
+<!-- Main Content -->
+<div class="w3-content w3-margin-top w3-light-grey" style="max-width:1400px;">
+
+    <!-- Job Section 1 -->
+    <div class="w3-container job-section">
+        <div class="w3-third">
+            <img src="assistant.jpg" alt="Assistant Lead Web" class="job-spec-image">
+        </div>
+        <div class="w3-twothird">
+            <h2 class="job-title">Assistant Lead Web</h2>
+            <p class="job-description">We are seeking a proactive and detail-oriented Assistant Web Lead to support our dynamic web development team.</p>
+            <h4>Responsibilities:</h4>
+            <ul>
+                <li>Assist the Lead Web Developer in managing projects.</li>
+                <li>Collaborate with cross-functional teams to meet deadlines.</li>
+                <li>Review and maintain code quality.</li>
+            </ul>
+            <h4>Qualifications:</h4>
+            <ul>
+                <li>2+ years of experience in web development.</li>
+                <li>Proficient in HTML, CSS, JavaScript.</li>
+                <li>Strong communication and organizational skills.</li>
+            </ul>
+        </div>
     </div>
+
+    <!-- Job Section 2 -->
+    <div class="w3-container job-section">
+        <div class="w3-third">
+            <img src="developing.jpg" alt="Web Developing" class="job-spec-image">
+        </div>
+        <div class="w3-twothird">
+            <h2 class="job-title">Web Developer</h2>
+            <p class="job-description">Join our team as a Web Developer and contribute to cutting-edge projects that shape the digital future.</p>
+            <h4>Responsibilities:</h4>
+            <ul>
+                <li>Design, build, and maintain websites and applications.</li>
+                <li>Ensure responsiveness and scalability of applications.</li>
+                <li>Debug and resolve technical issues efficiently.</li>
+            </ul>
+            <h4>Qualifications:</h4>
+            <ul>
+                <li>Bachelor's degree in Computer Science or equivalent.</li>
+                <li>3+ years of experience in web development.</li>
+                <li>Proficiency in modern frameworks like React or Angular.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Job Section 3 -->
+    <div class="w3-container job-section">
+        <div class="w3-third">
+            <img src="designing.jpg" alt="Web Designing" class="job-spec-image">
+        </div>
+        <div class="w3-twothird">
+            <h2 class="job-title">Web Designer</h2>
+            <p class="job-description">The Web Designer will be responsible for creating visually appealing and user-friendly interfaces for our clients.</p>
+            <h4>Responsibilities:</h4>
+            <ul>
+                <li>Design engaging and responsive web layouts.</li>
+                <li>Collaborate with developers to implement designs.</li>
+                <li>Stay updated with the latest web design trends.</li>
+            </ul>
+            <h4>Qualifications:</h4>
+            <ul>
+                <li>Experience with graphic design tools like Adobe XD or Figma.</li>
+                <li>Strong portfolio showcasing design projects.</li>
+                <li>Basic understanding of HTML and CSS.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- How to Apply -->
+    <div class="how-to-apply">
+        <h2>How to Apply</h2>
+        <p>Interested candidates can apply by sending their CV and cover letter to <a href="mailto:careers@hotbeans.com">careers@hotbeans.com</a>. Please include the position title in the subject line.</p>
+        <p>We look forward to hearing from you!</p>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey">  
+    <div class="w3-xlarge w3-padding-16">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Copyright © 2025 HotBeans Inc. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

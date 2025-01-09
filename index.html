@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Homepage</title>
@@ -17,60 +17,22 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </head>
 <body>
 
-<<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-4649ec40-4438-4fe9-a9b0-6ee0f1e793b3"></div>
-  
+
+
 <!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-orange w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-orange" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-     <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-orange"><img src="hb2.jpg" alt="home page" width=60px height=50px></a>
-    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About us</a>
-    <a href="application.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Application</a>
-    <a href="employee.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Employee</a>
-    <a href="JobSpec.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Job spec</a>
-     <a href="pay.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">HotBeans Course</a>
-  </div>
-  
- <!-- Accessibility Code for "harmfulvigorousmicroprogramming.cdoldur17.repl.co" -->
-<script>
-window.interdeal = {
-    "sitekey": "28e3cb804755b3284a85f1d2948f180d",
-    "Position": "Left",
-    "Menulang": "EN-GB",
-    "domains": {
-        "js": "https://cdn.equalweb.com/",
-        "acc": "https://access.equalweb.com/"
-    },
-    "btnStyle": {
-        "vPosition": [
-            "80%",
-            null
-        ],
-        "scale": [
-            "0.8",
-            "0.8"
-        ],
-        "color": {
-            "main": "#FFA500",
-            "second": ""
-        },
-        "icon": {
-            "type": 7,
-            "shape": "semicircle"
-        }
-    }
-};
-(function(doc, head, body){
-	var coreCall             = doc.createElement('script');
-	coreCall.src             = 'https://cdn.equalweb.com/core/4.4.1/accessibility.js';
-	coreCall.defer           = true;
-	coreCall.integrity       = 'sha512-tq2wb4PBHqpUqBTfTG32Sl7oexERId9xGHX2O3yF91IYLII2OwM1gJVBXGbEPaLmfSQrIE+uAOzNOuEUZHHM+g==';
-	coreCall.crossOrigin     = 'anonymous';
-	coreCall.setAttribute('data-cfasync', true );
-	body? body.appendChild(coreCall) : head.appendChild(coreCall);
-})(document, document.head, document.body);
-</script>
+<div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large"><img src="hb2.jpg" alt="Home" width="60" height="50"></a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">About Us</a>
+    <a href="application.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Application</a>
+    <a href="employee.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Employee</a>
+    <a href="JobSpec.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Job Spec</a>
+</div>
+
+
+
+  <script> (function(){ var s = document.createElement('script'); var h = document.querySelector('head') || document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init(); }; h.appendChild(s); })(); </script>
+
+
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
     <a href="about.html" class="w3-bar-item w3-button w3-padding-large">About us</a>
@@ -89,20 +51,38 @@ window.interdeal = {
   </div>
 </div>
 
-<!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">HotBeans Globe</h1>
-  <p class="w3-xlarge"></p>
-   <div class="w3-third w3-center">
-      <img src="giphy.gif" alt="giphy" style="width:110%" class="w3-circle w3-hover-opacity">
+<!-- Heading Section -->
+<div id="heading-container">
+  <h1 id="hotbeans-heading">Hotbeans Global</h1>
+</div>
+
+  <!-- Header -->
+  <header class="w3-container w3-custom-header w3-center" style="padding:128px 16px; display: flex; justify-content: space-between; align-items: center;">
+    <!-- Left Section: Image -->
+    <div style="flex: 1; text-align: left;">
+      <img src="giphy.gif" alt="giphy" style="width: 90%; border-radius: 50%;" class="w3-hover-opacity">
     </div>
 
- 
-<h1 class="w3-padding-32">Imagination bleeds from the pen of creativity.</h1>
- <p class="w3-text-yellow"> 
-   "Empowering businesses worldwide, HotBeans specialises in crafting software solutions that adapt to the unique challenges of each client. With a legacy of technical excellence and a commitment to innovation, our expert team partners with organisations of all sizes to turn ambitious visions into reality."
+    <!-- Right Section: Quote -->
+    <div style="flex: 1; padding: 0 20px; color: white; text-align: right;">
+      <p style="font-size: 1.5em; font-style: italic; margin: 0;">
+        "The only way to do great work is to love what you do."
+      </p>
+      <p style="font-size: 1em; margin-top: 8px;">– Steve Jobs</p>
+    </div>
+  </header>
 
- </p>
+
+
+<div class="w3-container" style="background-color: #003366; padding:32px; text-align:center;">
+  <h2 class="w3-text-white">Join Our Journey</h2>
+  <p class="w3-text-white">Take the next step in building your dream career in IT with HotBeans.</p>
+  <a href="application.html" class="w3-button w3-white w3-padding-large w3-hover-light-grey w3-margin-top">Explore Opportunities</a>
+  <a href="JobSpec.html" class="w3-button w3-white w3-padding-large w3-hover-light-grey w3-margin-top">Our Jobs</a>
+</div>
+
+
+
 </header>
 
 <!-- First Grid -->
@@ -125,20 +105,21 @@ window.interdeal = {
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-third w3-center">
-     <img src="hd.jpg" alt="male" style="width:100%" class="w3-circle w3-hover-opacity">
+     <img src="light.png" alt="male" style="width:100%" class="w3-circle w3-hover-opacity">
     </div>
 
     <div class="w3-twothird">
-      <h1>Sparkling Offers</h1>
-      <h5 class="w3-padding-32">50% off with all courses now. An all inlusive template for your remote design sprint.</h5>
+      <h1>Quick tip!</h1>
+      <h5 class="w3-padding-32">When applying for a position with us, ensure your resume and cover letter highlight your most relevant skills and experiences. Tailor them to the role, reflecting our values and goals. We value authenticity, so show us why you’re the perfect fit for the team. Keep it concise, but make it memorable.</h5>
 
-      <p class="w3-text-grey">Use the special code now:WE2I9MN .</p>
+      <p class="w3-text-grey">Keep pushing, keep striving, the future’s on your side,
+      With passion and drive, success won’t hide!</p>
     </div>
   </div>
 </div>
 
 <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">If any enquiry please check the employee page.</h1>
+    <h1 class="w3-margin w3-xlarge">If you have any enquiries please check the employee page.</h1>
 </div>
 
 <!-- Footer -->
@@ -152,7 +133,7 @@ window.interdeal = {
     <i class="fa fa-linkedin w3-hover-opacity"></i>
  </div>
  <p>Disclaimer: Termly Inc is not a lawyer or a law firm and does not engage in the practice of law or provide legal advice or legal representation. All information, software, services, and comments provided on the site are for informational and self-help purposes only and are not intended to be a substitute for professional legal advice. Use of this site is subject to our Terms of Use.
-Copyright © 2022 HotBeans Inc. All rights reserved.<a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Policy rights</a></p>
+Copyright © 2025 HotBeans Inc. All rights reserved.<a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Policy rights</a></p>
 </footer>
 
 <script>
